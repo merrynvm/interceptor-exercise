@@ -1,0 +1,26 @@
+server:
+  port: 8080
+
+---
+spring:
+  config:
+    activate:
+      on-profile: dev
+server:
+  port: 7000
+
+---
+spring:
+  config:
+    activate:
+      on-profile: prod
+server:
+  port: 8000
+
+---
+spring:
+  config:
+    activate:
+      on-profile: test
+server:
+  port: 6670
